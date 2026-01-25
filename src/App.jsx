@@ -1,46 +1,53 @@
-import React from "react";
-import Navbar from "./Components/Navbar";
-import Home from "./Components/Home";
-import Skills from "./Components/Skills";
-import { Route, Routes } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
 
-const App = () => {
-  const Language = [
-    {
-      Title: "Python",
-      level: "Intermediate",
-      percent: "70%",
-    },
-    {
-      Title: "C,C++",
-      level: "Intermediate",
-      percent: "70%",
-    },
-    {
-      Title: "Java",
-      level: "Basic",
-      percent: "50%",
-    },
-    {
-      Title: "JavaScript",
-      level: "Advannced",
-      percent: "95%",
-    },
-    {
-      Title: "SQL",
-      level: "Advanced",
-      percent: "90%",
-    },
-  ];
+import Home from "./Sections/Home";
+import About from "./Sections/About";
+import Skills from "./Sections/Skills";
+import Projects from "./Sections/Projects";
+import Certifications from "./Sections/Certifications";
+import Contact from "./Sections/Contact";
+import AllSkills from "./Sections/AllSkills";
+
+function App() {
   return (
-    <div className="bg-slate-600 min-h-screen pt-4">
-      <Navbar />
+    <>
+      <Navbar className="bg-slate-900" />
+
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/skills" element={<Skills data={Language} />} />
+        {/* MAIN SINGLE PAGE */}
+        <Route
+          path="/"
+          element={
+            <>
+              <section id="home">
+                <Home />
+              </section>
+              <section id="about">
+                <About />
+              </section>
+              <section id="projects">
+                <Projects />
+              </section>
+              <section id="skills">
+                <Skills />
+              </section>
+
+              <section id="certifications">
+                <Certifications />
+              </section>
+              <section id="contact">
+                <Contact />
+              </section>
+            </>
+          }
+        />
+
+        {/* EXTRA PAGE */}
+        <Route path="/skills/all" element={<AllSkills />} />
       </Routes>
-    </div>
+    </>
   );
-};
+}
 
 export default App;
