@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import projectsData from "../data/ProjectsData";
+import ProjectCard from "./ProjectCard";
 
 const Projects = () => {
   const [activeCategory, setActiveCategory] = useState("All");
@@ -30,6 +31,19 @@ const Projects = () => {
           </button>
         ))}
       </div>
+
+      {/* Project Categories */}
+      {projectsData
+        .filter((group) => {
+          return activeCategory === "All" || group.category === activeCategory;
+        })
+        .map((group, idx) => {
+          return (
+            <div key={idx} className="flex flex-wrap">
+              <ProjectCard data={group} />
+            </div>
+          );
+        })}
     </section>
   );
 };
