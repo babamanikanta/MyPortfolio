@@ -1,8 +1,8 @@
 import { Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
+import Navbar from "./Components/Navbar";
 
 import Home from "./Sections/Home";
-import About from "./Sections/About";
+import Education from "./Sections/Education";
 import Skills from "./Sections/Skills";
 import Projects from "./Sections/Projects";
 import Certifications from "./Sections/Certifications";
@@ -23,8 +23,8 @@ function App() {
               <section id="home">
                 <Home />
               </section>
-              <section id="about">
-                <About />
+              <section id="education">
+                <Education />
               </section>
               <section id="projects">
                 <Projects />

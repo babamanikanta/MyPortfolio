@@ -67,6 +67,63 @@ const projectsData = [
       demo: "",
     },
   },
+
+  // 🔽 NEW PROJECTS ADDED BELOW
+
+  {
+    title: "Portfolio Website (Frontend)",
+    type: "Frontend Website",
+    duration: "2025",
+    description: "Designed and developed a fully responsive personal portfolio website.",
+    points: [
+      "Built using HTML, CSS, and JavaScript",
+      "Created clean UI/UX with reusable components",
+      "Ensured cross-device compatibility and responsiveness",
+      "Used Git and GitHub for version control",
+    ],
+    tools: ["HTML", "CSS", "JavaScript", "Git", "GitHub"],
+    category: "Web Development",
+    links: {
+      github: "https://github.com/your-github",
+      demo: "",
+    },
+  },
+  {
+    title: "Intelligent Registration Form",
+    type: "Frontend Application",
+    duration: "Jan 2026",
+    description: "Built a dynamic form with real-time validation and user-friendly error handling.",
+    points: [
+      "Implemented strong password validation rules",
+      "Added real-time form validation",
+      "Enhanced UX with instant feedback using DOM manipulation",
+      "Debugged edge cases in form validation logic",
+    ],
+    tools: ["HTML", "CSS", "JavaScript"],
+    category: "Web Development",
+    links: {
+      github: "https://github.com/your-github",
+      demo: "",
+    },
+  },
+  {
+    title: "Online Polling and Voting App (Full-Stack)",
+    type: "Web Application",
+    duration: "Jun 2025 – Aug 2025",
+    description: "Developed full-stack modules for an online polling and voting platform.",
+    points: [
+      "Built frontend modules for user interaction",
+      "Integrated backend APIs using Node.js and Express",
+      "Designed MongoDB data models and CRUD operations",
+      "Tested API endpoints and fixed request/response bugs",
+    ],
+    tools: ["MongoDB", "Express", "React", "Node.js"],
+    category: "Web Development",
+    links: {
+      github: "https://github.com/your-github",
+      demo: "",
+    },
+  },
 ];
 
 export default projectsData;

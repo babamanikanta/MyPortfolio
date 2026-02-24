@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 
-const sections = ["home", "about", "projects", "skills", "certifications", "contact"];
+const sections = ["home", "education", "projects", "skills", "certifications", "contact"];
 
 const Navbar = () => {
   const [active, setActive] = useState("home");
@@ -22,7 +22,7 @@ const Navbar = () => {
           }
         });
       },
-      { threshold: 0.6 }, // 60% visible
+      { threshold: 0.5 }, // 60% visible
     );
 
     sections.forEach((id) => {
